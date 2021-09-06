@@ -64,6 +64,25 @@ void trasponer_array(arrays2d *array_principal)
     }
 }
 
+void multiplicar_array(arrays2d *array_principal)
+{
+
+    int x, y, z;
+
+    for(x = 0; x < 59; x++)
+    {
+        for(y = 0; y < 59; y++)
+        {
+            for(z = 0; z < 6; z++)
+            {
+                array_principal->array_csvM[x][y] += ((array_principal->array_csv[x][z]) * (array_principal->array_csvT[z][y]));
+            }
+        }
+    }
+
+    //return *array_principal;
+}
+
 int main(void)
 {
     int x, y;
@@ -73,6 +92,7 @@ int main(void)
 
     leerA_archivo(direccion_archivo, &array_principal);
     trasponer_array(&array_principal);
+    multiplicar_array(&array_principal);
 
     /*for(x = 0; x < 59; x++)
     {
@@ -91,4 +111,13 @@ int main(void)
         }
         printf("\n");
     }*/
+
+    for(x = 0; x < 59; x++)
+    {
+        for(y = 0; y < 59; y++)
+        {
+            printf("%d ", array_principal.array_csvM[x][y]);
+        }
+        printf("\n");
+    }
 }
