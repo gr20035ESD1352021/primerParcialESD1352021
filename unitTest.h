@@ -1,5 +1,5 @@
 #ifndef __UNITTEST_H
-#define __UNITTES_H
+#define __UNITTEST_H
 
 #include <stdio.h>
 #include <stdlib.h>

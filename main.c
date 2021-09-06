@@ -42,12 +42,10 @@ void leerA_archivo(char *direccion_archivo, arrays2d *array_principal)
             else
             {
                 array_principal->array_csv[x][0] = token;
-                //printf("%s", array_principal->array_csv[x][0]);
             }
 
             token = strtok(NULL, ",");
         }
-        //printf("\n");
         x++;
     }
     fclose(archivo_csv);
@@ -94,8 +92,7 @@ void multiplicar_array(arrays2d *array_principal)
 
 const char *integrantes()
 {
-
-    return "hs20006,gr20035";
+    return "gr20035,hs20006";
 }
 
 int main(void)
@@ -105,9 +102,9 @@ int main(void)
     arrays2d array_principal;
     char direccion_archivo[50] = "peliculasFavoritasESD135_2021.csv";
 
-    leerA_archivo(direccion_archivo, &array_principal);
-    trasponer_array(&array_principal);
-    multiplicar_array(&array_principal);
+    leerA_archivo(direccion_archivo, &array_principal); //array_csvN
+    trasponer_array(&array_principal);                  //array_csvT
+    multiplicar_array(&array_principal);                //array_csvM
 
-    printf("\n%s\n", integrantes());
+    printf("%s\n", integrantes());
 }
