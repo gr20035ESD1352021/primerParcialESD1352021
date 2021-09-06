@@ -3,6 +3,8 @@
 #include <string.h>
 #include <stdbool.h>
 
+#include "unitTest.h"
+
 #define MAXCHAR 60
 
 typedef struct 
@@ -68,6 +70,14 @@ void multiplicar_array(arrays2d *array_principal)
 {
 
     int x, y, z;
+
+    for(x = 0; x < 59; x++)
+    {
+        for(y = 0; y < 59; y++)
+        {
+            array_principal->array_csvM[x][y] = 0;
+        }
+    }
 
     for(x = 0; x < 59; x++)
     {
