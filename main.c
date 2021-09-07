@@ -106,5 +106,5 @@ int main(void)
     trasponer_array(&array_principal);                  //array_csvT
     multiplicar_array(&array_principal);                //array_csvM
 
-    printf("%s\n", integrantes());
+    return 0;
 }

@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "unittest.h": "c",
+        "cunit.h": "c",
+        "stdio.h": "c"
+    }
+}
