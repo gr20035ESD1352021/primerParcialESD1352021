@@ -39,7 +39,7 @@ void leerA_archivo(char *direccion_archivo, arrays2d *array_principal)
                 // **IMPORTANTE**
                 // EN CASO DE ERRORES, MODIFICAR EL VALOR DEL INDICE "X" DEl arrar_csvN[x][y] 
                 // **IMPORTANTE**
-                array_principal->array_csvN[(x - 2)][y] = valor_token;
+                array_principal->array_csvN[x][y] = valor_token;
 
                 y++;
             }
