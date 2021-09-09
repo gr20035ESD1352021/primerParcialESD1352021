@@ -35,6 +35,10 @@ void leerA_archivo(char *direccion_archivo, arrays2d *array_principal)
             if (tamanio_token == 1 || tamanio_token == 2)
             {
                 int valor_token = atoi(token);
+                
+                // **IMPORTANTE**
+                // EN CASO DE ERRORES, MODIFICAR EL VALOR DEL INDICE "X" DEl arrar_csvN[x][y] 
+                // **IMPORTANTE**
                 array_principal->array_csvN[(x - 2)][y] = valor_token;
 
                 y++;
