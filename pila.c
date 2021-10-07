@@ -23,7 +23,7 @@ NODO_PILA* crear_nodoPila(float data){
 }
 
 void eliminar_nodoPila(NODO_PILA* nodo){
-    nodo->data = NULL;
+    nodo->data = 0;
     nodo->link = NULL;  
     free(nodo);
 }
@@ -53,5 +53,5 @@ float get_primeroPila(PILA* pila){
 }
 
 int pila_vacia(PILA* pila){
-    return pila->elementos == 0;
+    return pila->elementos > 0;
 }

@@ -28,6 +28,6 @@ void extraer_de_pila(PILA* pila);
 
 float get_primeroPila(PILA* pila);
 
-int pila_vacia(PILA* pila);
+int pila_vacia(PILA* pila); // 0 = Vacia
 
 #endif //PILA_H
