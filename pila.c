@@ -23,7 +23,8 @@ NODO_PILA* crear_nodoPila(float data){
 }
 
 void eliminar_nodoPila(NODO_PILA* nodo){
-    nodo->link = NULL;
+    nodo->data = NULL;
+    nodo->link = NULL;  
     free(nodo);
 }
 
@@ -43,7 +44,7 @@ void extraer_de_pila(PILA* pila){
     }
 }
 
-float get_primero(PILA* pila){
+float get_primeroPila(PILA* pila){
     if(pila->inicio == NULL){
         return (1);
     }else{

@@ -17,7 +17,7 @@ int main(void){
                 extraer_de_pila(pila);
                 break;
             case 3:
-                printf("Primer elemento: %f\n", get_primero(pila));
+                printf("Primer elemento: %f\n", get_primeroPila(pila));
                 break;
             case 4:
                 if(pila_vacia(pila)){
